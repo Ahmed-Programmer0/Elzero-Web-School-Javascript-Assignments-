@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      // This code will not run because editor read line by line and it will not exeute this line which is before the element in the body
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // This Code will run because it execute when all the page run then execute it
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      //This Code will run because it is after all the elements in the page
+      document.getElementById("el").style.color = "red";
+    </script>
+  </body>
+</html>
