@@ -1,0 +1,2 @@
+// Using MIN_SAFE_INTEGER To get 9007199254740991
+console.log(-Number.MIN_SAFE_INTEGER);
